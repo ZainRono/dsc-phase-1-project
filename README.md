@@ -1,65 +1,71 @@
-# Phase 1 Project
+# Title; Microsoft's New Movie Studio
+Authors: Zainabu Cherotich Rono
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+# Overview
+The presentation will highlight Data exploration from various sources to determine the movies that Microsoft can invest in for their new studio. This will be based on three key points;
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+# Business Problem
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+How can Microsoft determine the nature of Studio that it can set up for it to create movies that are widely consumed and makes financial sense to the business?
 
-## Project Overview
+# Questions to consider:
+1. What is the most consumed movies across the globe?
+2 What is the most rewarding movies, businesswise?
+3. What is the best kind of movies to invest in?
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+# Why picked the data for analysis?
+The datas picked are as below;
+1. bom.movie_gross-csv file
+2. imdb.title.basics-csv file
+3. imdb.title.ratings-csv file
 
-### Business Problem
+These files are from box office, which are a great representation of movies that are sold internationally. As such, it will enable Microsoft understand the nature, the entertainment level, the income and kindl of movies they need to invest in so as to remain competitive in the industry.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
+# Why the questions?
 
-In the folder `zippedData` are movie datasets from:
+They will enable Microsoft to answer the reason behind creating a studio, while they combine entertainment with business sense.
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+# The Data
+The three key datas are derived from box office, which is known to be the best seller of movies in 2000s. Ourdata is based on this, thus, a better way to keep abreast.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+The three files contain categories of information from box office, imdb basics and imdb ratings. The mixture of the three will give us details on ratings of movies, watchtime minutes, titles, domestic and foreign income and year the movies were produced. 
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+The target variables are majorly the ratings, the genre and income both locally and internationally.
 
-## Deliverables
+Properties of the variables are as follows;
+1. ratings-float
+2. genre-object
+3. domestic_gross-float
+4. foreign_gross-float
 
-There are three deliverables for this project:
+# Methods
+The data will be analysed using pandas. The csv file will be converted to a dataframe, which will then enable us to analyse in form of pd.
+Pandas is an easy way to analyse CSV files since it introduces statistical features that can help join and aggregate data easily and create a summary out of the data.
+Additionally, it adopts various visualization tools that are equally important for the analysis. 
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+# Results
+The analysis was carried out in five categories as follows;
+1. Histogram of genres that have higher gross-to check top ten performing movies in box office
+2. Relationship between genres and total_gross-To check the top five most watched genres, with higher pay
+3. Relationship between genres and ratings-To check relationship between ratings vis a vis genres
+4. Relationship between total gross and ratings-To check relationship between ratings and income
+5. Relationship between Ratings and Runtime minutes and total gross
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+# Conclusion
+Recommendations
+1. The top-five movies doing good in box office are Drama, Horror, Mystery, Thriller and Action. They have high ratings, which translates to higher gross.
+2. While producing studio, Microsoft should consider combining 2-3 kinds of genres from the top five, since a combination of two or more have higher ratings and higher gross as compared to individual gender.
+3. The movies should be between 100-150 minutes, which have better ratings. 
 
-### Key Points
+# For more Information
+For any additional questions, please contact name & email, Zainabu Rono, zainabu.rono@student.moringa.com
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+# Repository Structure
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-student.ipynb    <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
-
-## Getting Started
-
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
-
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
