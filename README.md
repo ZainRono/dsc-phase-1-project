@@ -10,8 +10,8 @@ How can Microsoft determine the nature of Studio that it can set up for it to cr
 
 # Questions to consider:
 1. What is the most consumed movies across the globe?
-2 What is the most rewarding movies, businesswise?
-3. What is the best kind of movies to invest in?
+2. What is the most rewarding movies, businesswise?
+3. What is the best kind of studio to set up?
 
 # Why picked the data for analysis?
 The datas picked are as below;
@@ -55,8 +55,8 @@ The analysis was carried out in five categories as follows;
 # Conclusion
 Recommendations
 1. The top-five movies doing good in box office are Drama, Horror, Mystery, Thriller and Action. They have high ratings, which translates to higher gross.
-2. While producing studio, Microsoft should consider combining 2-3 kinds of genres from the top five, since a combination of two or more have higher ratings and higher gross as compared to individual gender.
-3. The movies should be between 100-150 minutes, which have better ratings. 
+2. While producing studio, Microsoft should consider combining 2-3 kinds of genres from the top five, since a combination of two or more have higher ratings and higher gross as compared to individual gender. The movies should be between 100-150 minutes, which have better ratings.
+3. A24 is the most rewarding kind of studio.
 
 # For more Information
 For any additional questions, please contact name & email, Zainabu Rono, zainabu.rono@student.moringa.com
